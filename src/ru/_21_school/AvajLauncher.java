@@ -13,7 +13,6 @@ public class AvajLauncher {
 
     public static void main(String[] args) {
 
-
         WeatherTower weatherTower = new WeatherTower();
         try {
 

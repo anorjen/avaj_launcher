@@ -57,9 +57,6 @@ public class Helicopter extends Aircraft implements Flyable {
 
     private void landing() {
         Logger.log(this + ": landing.");
-        Logger.log("Current coordinates: Longtitude: [" + this.coordinates.getLongitude()
-                + "] Latitude: [" + this.coordinates.getLatitude()
-                + "] Height: [" + this.coordinates.getHeight() + "]");
         weatherTower.unregister(this);
     }
 }
