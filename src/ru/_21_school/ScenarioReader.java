@@ -53,7 +53,7 @@ public class ScenarioReader {
 
         try {
             changeCounter = Integer.parseInt(lines.get(0));
-        } catch (NumberFormatException e) {
+        } catch (IndexOutOfBoundsException | NumberFormatException e) {
             throw new AvajException("File format ERROR!");
         }
         lines.remove(0);

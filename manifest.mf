@@ -1,0 +1,2 @@
+main-class: ru._21_school.AvajLauncher
+class-path: out/
