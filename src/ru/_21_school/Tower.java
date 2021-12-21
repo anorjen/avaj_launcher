@@ -19,9 +19,17 @@ public abstract class Tower {
         observers.remove(flyable);
     }
 
-    protected void conditionsChanged(){
+    protected void conditionsChanged() {
+
+        int size = observers.size();
+
         for (int i = 0; i < observers.size(); i++) {
             observers.get(i).updateConditions();
+
+            if (size > observers.size()) {
+                --size;
+                --i;
+            }
         }
     }
 }

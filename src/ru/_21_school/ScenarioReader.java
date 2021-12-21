@@ -9,7 +9,7 @@ import java.util.List;
 
 public class ScenarioReader {
 
-    public static String SCENARIO_REGEX = "^([A-Za-z]+) ([A-Za-z0-9]+) (\\d+) (\\d+) (\\d+)";
+    public static String SCENARIO_REGEX = "^([A-Za-z]+) ([A-Za-z0-9]+) (-?\\d+) (-?\\d+) (\\d+)";
     private List<String> lines = new ArrayList<>();
     private int changeCounter;
     private int lineCounter = 0;

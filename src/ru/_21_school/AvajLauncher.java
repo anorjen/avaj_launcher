@@ -29,7 +29,12 @@ public class AvajLauncher {
                 Flyable flyable = getAircraft(line);
                 flyable.registerTowel(weatherTower);
             }
+
             int counter = reader.getChangeCounter();
+
+            if (counter <= 0) {
+                throw new AvajException("Number of times the simulation is negative or 0!");
+            }
 
             for (int i = 0; i < counter; i++) {
                 weatherTower.conditionsChanged();
